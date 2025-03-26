@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FQRNote - List</title>
+    <style>
+        .footer{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            background-color: #EDF0F2; 
+            width: 100%; 
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" style="font-size: larger;">
+        <thrad>
+            <tr>
+                <th>ID</th>
+                <th>长度</th>
+            </tr>
+        </thrad>
+        <tbody>
+            {% for item in list %}
+            <tr>
+                <td><a href="/{{ item.id }}">{{ item.id }}</a></td>
+                <td>{{ item.length }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
