@@ -19,8 +19,15 @@
 pip install django
 ```
 
+- 配置数据库
+```
+python manage.py makemigrations
+python manage.py migrate
+```
+
 - 运行项目
 ```
 python manage.py runserver 端口号
 ```
+
 即可在本地的指定端口号运行该项目。
